@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Contact Us</title>
+
+    <meta
+      name="Olha.Chernysh"
+      content="   Olha.Chernysh@studytafensw.edu.au   "
+    />
+
+    <link rel="stylesheet" href="TipToe_Soles.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <header></header>
+
+      <nav></nav>
+
+      <main>
+
+        <section>
+<div class="contactForm"
+            <form action="contact.php" method="post" >
+              <label><h1>Contact Us</h1></label>
+              <label>Select topic </label>
+                <select name="topic" id="topic">
+                <option value="Returns" selected="selected">Returns</option> 
+                <option value="Product and Size Information" selected="selected">Product and Size Information</option>
+                <option value="Shipping and Delivery Infomation" selected="selected">Shipping and Delivery Infomation</option>
+                <option value="General Enquiry" selected="selected">General Enquiry</option>
+            </select>
+              <label for="name">Name:</label> 
+              <input type="text" id="name" maxlength="30" required>
+              <label for="email">Email:</label>
+              <input type="text" id="email" maxlength="40">
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" maxlength="1500"></textarea>
+              <label for="checkbox"><input class="checkbox" type="checkbox" checked="checked" name="subscribe">&nbsp;  Subscribe
+        </label>
+              <label for="submit"><input type="submit" value="Send message"></label>
+              </form>
+            </div>
+            </section>
+      </main>
+
+      <footer></footer>
+    </div>
+  </body>
+</html>

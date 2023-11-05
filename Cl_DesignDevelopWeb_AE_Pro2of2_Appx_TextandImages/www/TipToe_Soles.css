@@ -1,0 +1,189 @@
+* {
+    margin: 0em;
+    padding: 0em;
+    font-size: 100%;
+    border-style: none;
+    box-sizing: border-box;
+    /* list-style-type: none; */
+    }
+    #wrapper{
+        padding:  0 4%;
+    }
+    .product-title {
+        text-align: center;
+        font-size: 22px;
+        text-transform: uppercase;
+        background-color: #f7f7f7;
+        padding: 15px;
+      } 
+/* .product-table caption{
+    margin: 0px 0;
+    background-color: #39565B;
+    color: white;
+    font-size: 20px;
+
+} */
+.product-table table {
+    border-collapse: collapse;
+    border:none;
+    /* width: 100%;    */
+}
+   
+.product-table th, .product-table td {
+    border: none;
+    text-align: left;
+    padding: 0;
+    margin: 0;
+   
+}
+.colspan{
+    line-height: 1.5;
+    font-size: large;
+}
+.size-gide-table caption{
+    margin: 10px 0;
+}
+.size-gide-table table {
+    border-collapse: collapse;
+    width: 100%;
+    
+}
+
+.size-gide-table th, td {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+    width: 25%;
+}
+
+.size-gide-table tr:nth-child(odd) {
+    background-color: #f7f7f7;
+}
+
+form{
+    width: 80%; 
+    max-width: 100%; 
+    margin: 0 auto; 
+    padding: 20px;
+    align-items: center; /* Center vertically */
+}
+  form label {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+   
+  } 
+
+  form label h1{
+    text-align: center;
+    background-color: #39565B;
+  }
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical; 
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #39565B;
+    color: white;
+    padding: 12px 20px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display:flex;
+   
+  }
+  /* When moving the mouse over the submit button, add a liter color */
+  input[type=submit]:hover {
+    background-color: #39565be0;
+  }
+  
+  /* two-column layout using CSS Grid
+  .card-product {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px; /* Add spacing between columns 
+    align-items: start;
+  }
+  */
+
+  .card-product {
+    display: block;
+    justify-content: space-between;
+    /* align-items: flex-start; */
+  }
+  
+  .product-info {
+    display: flex;
+    justify-content: space-between;
+    /* Adjust width as needed */
+    gap: 7%; /* Add spacing between columns */
+    padding: 5px;
+  }
+  
+  .details {
+    display: flex;
+    justify-content:space-between;
+    margin: 2%;
+    padding: 2% ;
+  }
+  .details-title {
+    text-transform: uppercase;
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  .details-list {
+    list-style-type: square;
+    margin-left: 1%;
+    line-height: 1.5;
+
+  }
+   /* button */
+  .add-cart {
+    background-color: #39565B;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    border-top: 4px solid #39565B;
+  }
+  .add-cart:hover {
+
+    
+    background-color: #39565be0;
+  }
+/* if min-width then the css inside the breakpoint is applied to screens >480px ...   if max-width then css inside the breakpoint is applied to screens <480px 
+Research other options to develop your responsive design skills */
+
+@media only screen and (min-width: 480px) {
+
+.product{
+    display: grid;
+            grid-template-columns: 1fr 1fr; /* Create two equal columns */
+            grid: template rows 1fr;;
+            grid-gap: 40px; 
+            position: relative;
+}
+
+.card-product{
+  border: 1px solid #39565B;
+
+}
+.add-cart {
+   
+}
+
+}   /*  end 480px breakpoint  */

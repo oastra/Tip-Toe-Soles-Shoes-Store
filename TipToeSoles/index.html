@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>TipToe Soles</title>
+
+    <meta
+      name="Olha.Chernysh"
+      content="   Olha.Chernysh@studytafensw.edu.au   "
+    />
+
+    <link rel="stylesheet" href="TipToe_Soles.css" />
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <header  class="header-container">
+       <a href="index.html"><img class="logo" src="images/TipToe-Soles_Logo_colour-FIXED.png" alt="TipToe-Soles_Logo" height="85" width="85"></a> 
+
+        <!-- BUTTON for mobile  -->
+        <button class="menu-toggle"> &#9776; </button>
+
+      <nav class="header-nav">
+        <ul class="header-list">
+            <li><a href="index.html" id="current">Home</a></li>
+            <li><a href="womens_shoes.html">Womens Shoes</a></li>
+            <li><a href="mens_shoes.html">Mens Shoes</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+      <main>   <!-- HERO IMAGE --> 
+        <div class="hero-img">
+          <div class="hero-text">
+            <h1>TipToe Soles</h1>
+            <p> is an Australian owned and operated company.  We aim to provide comfortable footwear at affordable prices to customers within Australia and around the world. </p>
+            <form class="hero-search" action="action_page.php">
+              <input type="text" placeholder="Search.." name="search" class="search-round">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+          </div>
+        </div>
+      
+      </main>
+  <!-- . The footer of the home page should include links to return policies, exchange policies, delivery policies, etc. And, of course, all pages must display the brand logo at the top left corner.  -->
+        <!-- social media instagram facebook-->
+
+        <!-- best seller with  links -->
+
+      <footer class="footer-container">  
+      
+        <nav class="footer-nav">
+            <ul class="footer-list">
+               
+                <li><a href="deliveryReturn.html">Returns And Exschange Policy</a></li>
+                <li><a href="deliveryReturn.html">Delivery Policy</a></li>
+                <li><a href="https://www.instagram.com/TipToeSoles"
+                    ><img src="images/instagram.png"
+                    width="21"
+                    height="20"
+                    alt="instagram"></a></li>
+                <li><a href="https://facebook.com/TipToeSoles">
+                    <img src="images/facebook.png"
+                    width="21"
+                    height="20" 
+                    alt="facebook"></a></li>
+                <li><a href="mailto:info@tiptoesoles.com.au" class="icon-large">&#9993;</a></li>
+                <li id="phone"><a href="tel:0292105000" class="icon-large">&#9990;</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </nav>
+        <!-- </div> -->
+        <div class="footer-copyright-container">
+            <div class="footer-copyright">
+                &copy; TipToeSoles 2021-2023
+            </div>
+            <ul class="footer-copyright-list">
+                   <li> <img src="images/1490135017-visa_82256.png"
+                    width="25"
+                    height="20"
+                    alt="visa" >
+                </li>
+                <li>
+                    <img src="images/mastercard-icon-512x329-xpgofnyv.png"
+                    width="25"
+                    height="20" 
+                    alt="mastercard">
+                </li> 
+                 <li>
+                    <img src="images/american-express.png"
+                    width="25"
+                    height="20"
+                    alt="AmEx" >
+                </li>
+                <li>
+                    <img src="images/1490135017-visa_82256.png"
+                    width="25"
+                    height="20" 
+                    alt="visa">
+                </li>
+                <li>
+                    <img src="images/mastercard-icon-512x329-xpgofnyv.png"
+                    width="25"
+                    height="20"
+                    alt="mastercard" >
+                </li>
+                <li>
+                    <img src="images/american-express.png"
+                    width="25"
+                    height="20"
+                    alt="AmEx" >
+                </li>
+                
+        </ul>
+        </div>
+      </footer>
+      </div>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navMenu = document.querySelector('.header-nav');
+    
+        menuToggle.addEventListener('click', function() {
+            navMenu.style.display = navMenu.style.display === 'none' ? 'flex' : 'none';
+        });
+    </script>
+  </body>
+</html>

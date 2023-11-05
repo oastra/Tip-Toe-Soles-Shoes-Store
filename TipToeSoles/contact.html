@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Contact Us</title>
+
+    <meta
+      name="Olha.Chernysh"
+      content="   Olha.Chernysh@studytafensw.edu.au   "
+    />
+
+    <link rel="stylesheet" href="TipToe_Soles.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <div id="wrapper">
+        <header  class="header-container">
+          <a href="index.html"><img class="logo" src="images/TipToe-Soles_Logo_colour-FIXED.png" alt="TipToe-Soles_Logo" height="85" width="85"></a>
+  
+          <!-- BUTTON for mobile  -->
+          <button class="menu-toggle"> &#9776; </button>
+  
+        <nav class="header-nav">
+          <ul class="header-list">
+              <li ><a href="index.html">Home</a></li>
+              <li><a href="womens_shoes.html">Womens Shoes</a></li>
+              <li><a href="mens_shoes.html">Mens Shoes</a></li>
+              <li><a href="contact.html" id="current">Contact Us</a></li>
+          </ul>
+        </nav>
+      </header>
+
+     
+
+      <main>
+
+        <section class="contact">
+<div class="contactform"
+            <form action="contact.php" method="post" >
+              <label><h1 class="contactform-title">Contact Us</h1></label>
+              <label>Select topic </label>
+                <select name="topic" id="topic">
+                <option value="Returns" selected="selected">Returns</option> 
+                <option value="Exschanges" selected="selected">  Exschanges</option>
+                <option value="Product and Size Information" selected="selected">Product and Size Information</option>
+                <option value="Shipping and Delivery Infomation" selected="selected">Shipping and Delivery Infomation</option>
+                <option value="General Enquiry" selected="selected">General Enquiry</option>
+            </select>
+              <label for="name">Name:</label> 
+              <input type="text" id="name" maxlength="30" required>
+              <label for="email">Email:</label>
+              <input type="text" id="email" maxlength="40">
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" maxlength="1500"></textarea>
+              <label for="checkbox"><input class="checkbox" type="checkbox" checked="checked" name="subscribe">&nbsp;  Subscribe
+        </label>
+              <label for="submit"><input type="submit" value="Send message"></label>
+              </form>
+            </div>
+           
+            <address class="address">
+              <h2 class="address-title">Our factory located:</h2><br/>
+            322 Avondale Road<br />
+Enfield NSW 2133<br />
+
+<h2 class="address-description">All purchases are exclusively available through our online store <br/> We do not have a physical showroom</h2> <br/>
+            <h2>Customer Servise</h2><br />
+              Mobile:<a href="tel:0292105000"> 0292105000</a><br />
+              Email: <a href="mailto:info@tiptoesoles.com.au" > info@tiptoesoles.com.au </a><br />
+            </address>
+         
+          </section>
+      </main>
+
+      <footer class="footer-container">  
+      
+        <nav class="footer-nav">
+            <ul class="footer-list">
+               
+                <li><a href="deliveryReturn.html">Returns And Exschange Policy</a></li>
+                <li><a href="deliveryReturn.html">Delivery Policy</a></li>
+                <li><a href="https://www.instagram.com/TipToeSoles"
+                    ><img src="images/instagram.png"
+                    width="21"
+                    height="20"
+                    alt="instagram"></a></li>
+                <li><a href="https://facebook.com/TipToeSoles">
+                    <img src="images/facebook.png"
+                    width="21"
+                    height="20" 
+                    alt="facebook"></a></li>
+                <li><a href="mailto:info@tiptoesoles.com.au" class="icon-large">&#9993;</a></li>
+                <li id="phone"><a href="tel:0292105000" class="icon-large">&#9990;</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </nav>
+        <!-- </div> -->
+        <div class="footer-copyright-container">
+            <div class="footer-copyright">
+                &copy; TipToeSoles 2021-2023
+            </div>
+            <ul class="footer-copyright-list">
+                   <li> <img src="images/1490135017-visa_82256.png"
+                    width="25"
+                    height="20"
+                    alt="visa" >
+                </li>
+                <li>
+                    <img src="images/mastercard-icon-512x329-xpgofnyv.png"
+                    width="25"
+                    height="20" 
+                    alt="mastercard">
+                </li> 
+                 <li>
+                    <img src="images/american-express.png"
+                    width="25"
+                    height="20"
+                    alt="AmEx" >
+                </li>
+                <li>
+                    <img src="images/1490135017-visa_82256.png"
+                    width="25"
+                    height="20" 
+                    alt="visa">
+                </li>
+                <li>
+                    <img src="images/mastercard-icon-512x329-xpgofnyv.png"
+                    width="25"
+                    height="20"
+                    alt="mastercard" >
+                </li>
+                <li>
+                    <img src="images/american-express.png"
+                    width="25"
+                    height="20"
+                    alt="AmEx" >
+                </li>
+                
+        </ul>
+        </div>
+      </footer>
+    </div>
+      <script>
+          const menuToggle = document.querySelector('.menu-toggle');
+          const navMenu = document.querySelector('.header-nav');
+      
+          menuToggle.addEventListener('click', function() {
+              navMenu.style.display = navMenu.style.display === 'none' ? 'flex' : 'none';
+          });
+      </script>
+      </footer>
+    </div>
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navMenu = document.querySelector('.header-nav');
+    
+        menuToggle.addEventListener('click', function() {
+            navMenu.style.display = navMenu.style.display === 'none' ? 'flex' : 'none';
+        });
+    </script>
+  </body>
+</html>
